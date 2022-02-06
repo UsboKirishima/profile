@@ -74,6 +74,8 @@ span {
 a {
     text-decoration: none;
     margin-right: 3px;
+    color: var(--text);
+    transition: 0.1s;
 }
 
 a:hover {
