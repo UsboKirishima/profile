@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+:root {
+    --base: #232136;
+    --surface: #fffaf3;
+    --overlay: #393552;
+    --muted: #9893a5;
+    --subtle: #797593;
+    --text: #575279;
+    --love: #b4637a;
+    --gold: #ea9d34;
+    --rose: #d7827e;
+    --pine: #286983;
+    --foam: #56949f;
+    --iris: #907aa9;
+    --hightlight: #44415a;
+    --low: #2a283e;
+}
+
+body {
+    background: var(--base);
+}
+
+.object-container {
+    margin-top: 20%;
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 550px;
+    margin: auto;
+    text-align: left;
+    background-color: var(--low);
+    border-radius: 8px;
+    display: flex;
+}
+
+.info {
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: var(--text);
+    font-family: 'Quicksand', sans-serif;
+    margin: 3px;
+    display: flex;
+}
+
+h1 {
+    color: #3e8fb0;
+    /*font-family: 'Quicksand', sans-serif, monospace;*/
+    font-family: 'Dancing Script', cursive;
+    margin: 5px;
+    /*font-weight: bold;*/
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+img {
+    display: inline-block;
+    border-radius: 8px 0px 0px 8px;
+}
+
+span {
+    color: #908caa;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    display: flex;
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+a:hover {
+    color: #286983;
+    transition: 0.2s;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
