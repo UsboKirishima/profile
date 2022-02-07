@@ -87,3 +87,16 @@ a:hover {
     margin-top: 10px;
 }
 
+.projects {
+    margin-top: 30px;
+}
+
+hr {
+    width: 10%;
+    border: 1px solid #907aa9;
+}
+
+#pr {
+    font-family: 'Quicksand', cursive;
+    font-weight: bold;
+}
