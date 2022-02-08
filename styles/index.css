@@ -36,6 +36,7 @@ body {
     display: flex;
 }
 
+
 .info {
     margin: 10px;
     margin-bottom: 15px;
@@ -99,4 +100,17 @@ hr {
 #pr {
     font-family: 'Quicksand', cursive;
     font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+      display: inline-block;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    img {
+        width: 276px;
+        border-radius: 8px 8px 0px 0px;
+    }
 }
