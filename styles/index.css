@@ -104,13 +104,12 @@ hr {
 
 @media screen and (max-width: 500px) {
     .container {
-      display: inline-block;
-      margin-left: 10%;
-      margin-right: 10%;
+      display:inline-block;
+      margin-left: 15%;
+      margin-right: auto;
     }
-
     img {
-        width: 276px;
+        width: 100%;
         border-radius: 8px 8px 0px 0px;
     }
 }

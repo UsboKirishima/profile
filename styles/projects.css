@@ -26,14 +26,8 @@ body {
 }
 
 .container {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    min-height: 550px;
     margin: auto;
-    text-align: left;
-    background-color: var(--low);
-    border-radius: 8px;
-    display: block;
+    
 }
 
 #my-projects-title {
@@ -54,22 +48,66 @@ h1 {
 }
 
 p {
-    margin-bottom: 10px;
+    margin: 10px;
     color: #9ccfd8;
     font-family: 'Acme', sans-serif;
-    margin-left: 10px;
 }
 
 a {
-    color: #9ccfd8;
+    color: #9893a5;
     font-family: 'Acme', sans-serif;
+    margin: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
 }
 
 a:hover {
     transition: 0.3s;
-    text-decoration: none;
+    opacity: 80%;
 }
 
 .projects-container {
     margin-top: 5%;
+}
+
+#card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    min-height: 100px;
+    margin: auto;
+    text-align: left;
+    background-color: var(--low);
+    border-radius: 8px;
+    display: block;
+    margin-top: 30px;
+}
+
+.card-components {
+    margin: 0;
+}
+
+br {
+    margin: 0;
+}
+
+span {
+    position: relative;
+    margin: 0;
+}
+
+.langs {
+    float: right;
+    margin-top: 35px;
+    margin-right: 15px;
+}
+
+h2 {
+    color: #9893a5;
+    font-family: 'Acme', sans-serif;
+    margin: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: lighter;
 }
