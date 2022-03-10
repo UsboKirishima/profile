@@ -35,7 +35,7 @@ const App: NextPage = () => {
          <Link href='/Home'>
             <h4><a href='#' id={styles.goto}>Go to website 🚀</a></h4>
          </Link>
-          <h1>Software is like sex, it's better when it's free.</h1>
+          <h1>Software is like sex, it&aposs better when it&aposs free.</h1>
         </div>
       </Wrapper>
       </>
