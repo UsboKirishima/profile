@@ -8,6 +8,7 @@ import Home from './Home';
 import Link from 'next/link';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { KeyboardEvent, useCallback, useEffect, useState } from 'react';
+import { Navbar } from '../components/Navbar';
 
 const App: NextPage = () => {
   return (
@@ -29,7 +30,6 @@ const App: NextPage = () => {
         <title>Usbo Kirishima</title>
         <link rel="shortcut icon" href="public/timmy.jpg" type="image/x-icon"/>
       </Head>
-
       <Wrapper>
         <div className={styles.linus_cit}>
          <Link href='/Home'>
@@ -52,4 +52,4 @@ height: 100vh;
 color: #C3BAC6;
 `;
 
-export default App
+export default App;
