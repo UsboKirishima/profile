@@ -39,14 +39,14 @@ const Home: NextPage = () => {
             <Description>
                 Every days I try to learn something new about languages, tools, APIs, wrappers<br/>
                 frameworks ecc... 
-                especially in the evening while listening to 80&apos/90&apos music.
+                especially in the evening while listening to 80'/90' music.
             </Description>
             <h3>About my music</h3>
             <Description>
             I love all genres of music. Based on the circumstances I choose the most suitable songs. <br />
-            When I&aposm programming I like listening to 70&apos/80&apos/90&apos music like The Beatles, Måneskin, <br />
-            The Cranberries Guns N&apos Roses and John Lennon. <br />
-            When I&aposm sad I love to listening electric guitar vibess and the remaked songs of The Last of Us. <br />
+            When I'm programming I like listening to 70'/80'/90' music like The Beatles, Måneskin, <br />
+            The Cranberries Guns N' Roses and John Lennon. <br />
+            When I'm sad I love to listening electric guitar vibess and the remaked songs of The Last of Us. <br />
             I also love dubstep, edm. Timmy Trumpet, Marshmello, Crypto, Avicii, Gabry Ponte ecc...
             </Description>
             <Presence />

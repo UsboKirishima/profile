@@ -44,11 +44,11 @@ const Navbar = () => {
              <Title>Usbo Kirishima</Title>
              <Pages>
                 <div style={{marginTop: '25px'}}></div>
-                <Item href='#'>
+                <Item href='/Home'>
                     Home
                 </Item>
                 <div style={{marginTop: '25px'}}></div>
-                <Item href='#'>
+                <Item href='/Projects'>
                     Projects
                 </Item>
                 <div style={{marginTop: '25px'}}></div>
