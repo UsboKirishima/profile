@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+:root {
+    /*Rosé Pìne theme*/
+    --base: #232136;
+    --surface: #2a273f;
+    --overlay: #393552;
+    --muted: #9893a5;
+    --subtle: #797593;
+    --text: #575279;
+    --love: #b4637a;
+    --gold: #ea9d34;
+    --rose: #d7827e;
+    --pine: #286983;
+    --foam: #56949f;
+    --iris: #907aa9;
+    --hightlight: #44415a;
+    --low: #2a283e;
+
+    /*Darcula theme*/
+    --background: #282a36;
+    --current_line: #242236;
+    --selection: #44475a;
+    --foreground: #f8f8f2;
+    --comment: #6272a4;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+}
+
+body {
+    background: var(--base);
+}
+
+body::selection {
+    color: var(--selection);
+}
+
+.object-container {
+    margin-top: 20%;
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 550px;
+    margin: auto;
+    text-align: left;
+    background-color: var(--low);
+    backdrop-filter: blur(9px);
+    border-radius: 8px;
+    display: flex;
+}
+
+
+.info {
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: var(--text);
+    font-family: 'Quicksand', sans-serif;
+    margin: 3px;
+    display: flex;
+}
+
+h1 {
+    color: #3e8fb0;
+    /*font-family: 'Quicksand', sans-serif, monospace;*/
+    font-family: 'Dancing Script', cursive;
+    margin: 5px;
+    /*font-weight: bold;*/
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+img {
+    display: inline-block;
+    border-radius: 8px 0px 0px 8px;
+}
+
+span {
+    color: #908caa;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    display: flex;
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 3px;
+    color: var(--text);
+    transition: 0.1s;
+}
+
+a:hover {
+    color: #286983;
+    transition: 0.2s;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.projects {
+    margin-top: 30px;
+}
+
+hr {
+    width: 10%;
+    border: 1px solid #907aa9;
+}
+
+#pr {
+    font-family: 'Quicksand', cursive;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+      display:inline-block;
+      margin-left: 15%;
+      margin-right: auto;
+    }
+    img {
+        width: 100%;
+        border-radius: 8px 8px 0px 0px;
+    }
+}
