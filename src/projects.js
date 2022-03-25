@@ -1,11 +1,12 @@
 const gh_name = 'UsboKirishima';
 
 const projects = [
-    {id: 0, name: 'Lived', description: 'Electronic register based on ClasseViva from terminal.', lang: 'js'},
-    {id: 1, name: 'PizzaPastaMandolin', description: 'Hacking toolkit made in C', lang: 'c'},
-    {id: 2, name: 'Niki', description: 'A simple & efficent discord bot', lang: 'ts'},
-    {id: 3, name: 'Goosemod-Installer', description: 'An automated installer for discord goosemod', lang: 'c'},
-    {id: 4, name: 'profile', description: 'My profile in a website.', lang: 'html'}
+    {id: 0, name: 'LuckyStrike', description: ' The new solution for a git client.', lang: 'ts'},
+    {id: 1, name: 'Lived', description: 'Electronic register based on ClasseViva from terminal.', lang: 'js'},
+    {id: 2, name: 'PizzaPastaMandolin', description: 'Hacking toolkit made in C', lang: 'c'},
+    {id: 3, name: 'Niki', description: 'A simple & efficent discord bot', lang: 'ts'},
+    {id: 4, name: 'Goosemod-Installer', description: 'An automated installer for discord goosemod', lang: 'c'},
+    {id: 5, name: 'profile', description: 'My profile in a website.', lang: 'html'}
 ]
 
 
