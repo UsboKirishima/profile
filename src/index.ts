@@ -1,5 +1,0 @@
-/**
- * 
- */
-
-// Future projects handler

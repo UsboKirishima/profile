@@ -1,0 +1,90 @@
+/* This file is for your main application CSS */
+@import "./phoenix.css";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+:root {
+    /*Rosé Pìne theme*/
+    --base: #232136;
+    --surface: #2a273f;
+    --overlay: #393552;
+    --muted: #9893a5;
+    --subtle: #797593;
+    --text: #575279;
+    --love: #b4637a;
+    --gold: #ea9d34;
+    --rose: #d7827e;
+    --pine: #286983;
+    --foam: #56949f;
+    --iris: #907aa9;
+    --hightlight: #44415a;
+    --low: #2a283e;
+
+    /*Darcula theme*/
+    --background: #282a36;
+    --current_line: #242236;
+    --selection: #44475a;
+    --foreground: #f8f8f2;
+    --comment: #6272a4;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+}
+
+body {
+  background: var(--base);
+}
+
+.navbar {
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: var(--overlay);
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-items {
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.navbar-item {
+  list-style-type: none;
+  transition: 0.2s;
+}
+
+.navbar-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Silkscreen', cursive;
+  color: var(--foreground);
+  font-size: 15px;
+}
+
+.navbar-item:hover {
+  opacity: 75%;
+  transition: 0.2s;
+}
+
+.trt {
+  text-transform: uppercase;
+  font-family: 'Silkscreen', cursive;
+  color: var(--foreground);
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}

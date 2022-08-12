@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website" />
+	  <meta property="og:url" content="https://davideusberti.me" />
+	  <meta property="og:title" content="Usbo Kirishima" />
+	  <meta property="og:description" content="Just a random programmer from Italy" />
+    <meta property="og:image" content={Routes.static_path(@conn, "/assets/res/timmy.jpg")} />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="250" />
+    <meta property="og:image:height" content="250" />
+    
+    <title>Usbo</title>
+    <link rel="shortcut icon" href={Routes.static_path(@conn, "/assets/res/timmy.jpg")} type="image/x-icon">
+    <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
+    <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
+  </head>
+  <body>
+    <%= @inner_content %>
+  </body>
+</html>
