@@ -7,6 +7,7 @@
 :root {
     /*Rosé Pìne theme*/
     --base: #232136;
+    --base2: #2e2b46;
     --surface: #2a273f;
     --overlay: #393552;
     --muted: #9893a5;
@@ -87,4 +88,41 @@ body {
   font-size: 15px;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+.index-container {
+  min-height: 90%;
+  min-width: 90%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 5%;
+  color: #fff;
+  font-family: 'Silkscreen', cursive;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.pfp {
+  width: 3%;
+  height: 3%;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--foreground);
+  border-radius: 100%;
+  margin-top: 15px;
+}
+
+.title1 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+.davideusberti {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.description {
+  text-align: left;
 }

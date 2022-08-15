@@ -18,6 +18,7 @@ defmodule ProfileWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/skills", SkillsController, :skills
   end
 
 
@@ -46,4 +47,5 @@ defmodule ProfileWeb.Router do
 
     get "/info", InfoController, :show
   end
+
 end
