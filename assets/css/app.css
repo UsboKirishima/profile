@@ -136,19 +136,70 @@ body {
 .davideusberti {
   font-size: 30px;
   color: var(--cyan);
-  text-align: left;
+  text-align: center;
   margin-bottom: 0;
 }
 
 .description {
-  text-align: left;
+  text-align: center;
   color: var(--cyan);
   font-size: 20px;
-  margin-top: 1%;
+  margin-top: 2%;
 }
 
 hr {
   font-family: 'Quicksand', monospace;
   color: var(--cyan);
   border: 0.5px solid var(--cyan);
+}
+
+.profilepic {
+  border-radius: 100%;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  display: flex;
+  position: relative;
+  margin-top: 10%;
+  border: 5px solid var(--overlay);
+}
+
+.skills-section {
+  margin-top: 10%;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  color: var(--cyan);
+  font-family: 'Quicksand', monospace;
+}
+
+.languages {
+  font-size: 30px;
+  color: var(--cyan);
+  text-align: center;
+  margin-bottom: 0;
+  font-family: 'Quicksand', monospace;
+  font-weight: bold;
+}
+
+.frameworks {
+  font-size: 30px;
+  color: var(--cyan);
+  text-align: center;
+  margin-bottom: 0;
+  font-family: 'Quicksand', monospace;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+.tools {
+  font-size: 30px;
+  color: var(--cyan);
+  text-align: center;
+  margin-bottom: 0;
+  font-family: 'Quicksand', monospace;
+  font-weight: bold;
+  margin-top: 10%;
 }

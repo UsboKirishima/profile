@@ -1,1 +1,63 @@
-<h1>CIAO CIAO</h1>
+<div class="index">
+  <article class="container">
+    <!-- --- NAVBAR --- -->
+    <section class="navbar-container">
+      <nav class="navbar">
+        <ul class="navbar-items">
+          <li class="navbar-item">
+            <a class="navbar-link" href="/">
+              home
+            </a>
+          </li>
+          <span class="trt"> - </span>
+          <li class="navbar-item">
+            <a class="navbar-link" href="/skills">
+              skills
+            </a>
+          </li>
+          <span class="trt"> - </span>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">
+              projects
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- --- MAIN --- -->
+    <section class="sk-container">
+      <section class="skills-section">
+      <div class="langs">
+        <h3 class="languages">
+          Programming languages
+        </h3>
+        <p>
+          <%= for language <- @languages do %>
+            <%= language %>,
+          <% end %>
+        </p>
+      </div>
+      <div class="frames">
+        <h3 class="frameworks">
+          Frameworks & Utilities
+        </h3>
+        <p>
+          <%= for framework <- @frameworks do %>
+            <%= framework %>,
+          <% end %>
+        </p>
+      </div> 
+      <div class="toolbox">
+        <h3 class="tools">
+          Tools & Softwares
+        </h3>
+        <p>
+          <%= for tool <- @tools do %>
+            <%= tool %>,
+          <% end %>
+        </p>
+      </div> 
+      </section>
+    </section>
+  </article>
+</div>
