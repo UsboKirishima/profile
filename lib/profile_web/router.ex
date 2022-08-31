@@ -19,6 +19,7 @@ defmodule ProfileWeb.Router do
 
     get "/", PageController, :index
     get "/skills", SkillsController, :skills
+    get "/projects", ProjectsController, :projects
   end
 
 
