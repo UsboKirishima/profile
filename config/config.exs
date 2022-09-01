@@ -4,7 +4,7 @@ config :profile,
   ecto_repos: [Profile.Repo]
 
 config :profile, ProfileWeb.Endpoint,
-  url: [host: "https://fruitful-anchored-bear.gigalixirapp.com/", port: 4000],
+  url: [host: "https://fruitful-anchored-bear.gigalixirapp.com/"],
   render_errors: [view: ProfileWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Profile.PubSub,
   live_view: [signing_salt: "eo4oO/SS"]

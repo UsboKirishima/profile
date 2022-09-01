@@ -10,7 +10,7 @@ config :profile, Profile.Repo,
   pool_size: 10
 
 config :profile, ProfileWeb.Endpoint,
-  http: [ip: {127, 0, 0, 1}, port: 4000],
+  http: [ip: {127, 0, 0, 1}, port: 443],
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
