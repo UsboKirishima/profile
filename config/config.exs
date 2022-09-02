@@ -4,7 +4,7 @@ config :profile,
   ecto_repos: [Profile.Repo]
 
 config :profile, ProfileWeb.Endpoint,
-  url: [host: "https://fruitful-anchored-bear.gigalixirapp.com/", port: 4000],
+  url: [host: "localhost"],
   render_errors: [view: ProfileWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Profile.PubSub,
   live_view: [signing_salt: "eo4oO/SS"]
@@ -28,4 +28,4 @@ config :logger, :console,
 
 config :phoenix, :json_library, Jason
 
-import_config "prod.exs"
+import_config "#{config_env()}.exs"

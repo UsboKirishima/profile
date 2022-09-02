@@ -10,7 +10,7 @@ config :profile, Profile.Repo,
   pool_size: 10
 
 config :profile, ProfileWeb.Endpoint,
-  http: [ip: {10, 56, 48, 21}, port: 4000],
+  http: [ip: {127, 0, 0, 1}, port: 4000],
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
@@ -18,7 +18,6 @@ config :profile, ProfileWeb.Endpoint,
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}
   ]
-
 
 config :profile, ProfileWeb.Endpoint,
   live_reload: [
