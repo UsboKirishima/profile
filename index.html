@@ -2,115 +2,82 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Davide Usberti</title>
-    <link rel="shortcut icon" href="assets/res/timmy.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--bootstrapcdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--fontawesomecdn-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200&family=Handlee&display=swap"
+        rel="stylesheet">
+
+    <!--Meta Data-->
+    <title></title>
+    <meta id="title-meta" name="title" content="Your Name-Links">
+    <meta id="description-meta" name="description"
+        content="Your Description">
+
+    <meta name="keywords"
+        content="">
+
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    <!-- Favicons -->
+    <link href="assets/img/boy.png" rel="icon">
+    <link href="assets/img/boy.png" rel="apple-touch-icon">
 
 </head>
 
 <body>
 
-    <div class="gradient-border" id="box">WEBSITE UNDER MAINTENANCE</div>
+    <!-- Profile picture-->
+    <img src="https://i.ibb.co/LSwR0GF/IMG-20221022-235600-379.jpg" alt="profile picture" class="profile-picture">
+
+    <!-- Profile name-->
+    <div class="profile-name"><b id="name_component"></b></div>
+
+    <!-- Profile about-->
+    <div class="profile-about"><b id="description_component">Your Description</b></div>
+
+    <!-- Links-->
+    <div id="link-container">
+        <!-- This will be populated with links -->
+    </div>
+
+
+    <footer>
+
+        <!--bottom text-->
+        <a href="https://instagram.com/davideusberti" class="link-hide">
+            <div class="bottom-text">davideusberti XP</div>
+        </a>
+    </footer>
+
+    <!--Javascript-->
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-
-    :root {
-        /*Rosé Pìne theme*/
-        --base: #232136;
-        --surface: #2a273f;
-        --overlay: #393552;
-        --muted: #9893a5;
-        --subtle: #797593;
-        --text: #575279;
-        --love: #b4637a;
-        --gold: #ea9d34;
-        --rose: #d7827e;
-        --pine: #286983;
-        --foam: #56949f;
-        --iris: #907aa9;
-        --hightlight: #44415a;
-        --low: #2a283e;
-
-        /*Darcula theme*/
-        --background: #282a36;
-        --current_line: #242236;
-        --selection: #44475a;
-        --foreground: #f8f8f2;
-        --comment: #6272a4;
-        --cyan: #8be9fd;
-        --green: #50fa7b;
-        --orange: #ffb86c;
-        --pink: #ff79c6;
-        --purple: #bd93f9;
-        --red: #ff5555;
-        --yellow: #f1fa8c;
-    }
-
-
-    html,
-    body {
-        height: 100%;
-    }
-    
-    body {
-        background: var(--overlay);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
-    #box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 400px;
-        height: 200px;
-        color: var(--foreground);
-        font-family: 'Silkscreen', cursive;
-        font-size: 2.5rem;
-    }
-
-    .gradient-border {
-        --borderWidth: 3px;
-        background: var(--background);
-        position: relative;
-        border-radius: var(--borderWidth);
-        text-align: center;
-    }
-
-    .gradient-border:after {
-        content: '';
-        position: absolute;
-        top: calc(-1 * var(--borderWidth));
-        left: calc(-1 * var(--borderWidth));
-        height: calc(100% + var(--borderWidth) * 2);
-        width: calc(100% + var(--borderWidth) * 2);
-        background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-        border-radius: calc(2 * var(--borderWidth));
-        z-index: -1;
-        animation: animatedgradient 3s ease alternate infinite;
-        background-size: 300% 300%;
-    }
-
-
-    @keyframes animatedgradient {
-        0% {
-            background-position: 0% 50%;
-        }
-
-        50% {
-            background-position: 100% 50%;
-        }
-
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-</style>
