@@ -38,25 +38,24 @@
 }
 
 body {
-  background: var(--base);
+  background: #000;
   padding: 0px 50px;
 }
 
 .navbar {
   overflow: hidden;
   width: 100%;
-  height: 40px;
+  height: 50px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  background: var(--overlay);
-  margin: 0;
+  background: #0001;
   padding: 0;
 }
 
 .navbar-items {
-  margin: 10px 0 0 0;
+  margin: 15px 0 0 0;
   display: flex;
   flex-direction: row;
   padding: 0;
@@ -74,7 +73,8 @@ body {
   text-transform: uppercase;
   font-family: 'Quicksand', monospace;
   color: var(--cyan);
-  font-size: 15px;
+  font-size: 20px;
+  margin: 10px;
 }
 
 .navbar-item:hover {
@@ -89,6 +89,7 @@ body {
   font-size: 15px;
   margin-left: 5px;
   margin-right: 5px;
+  margin-top: 5px;
 }
 
 .index-container {
@@ -134,17 +135,18 @@ body {
 }
 
 .davideusberti {
-  font-size: 30px;
+  font-size: 40px;
   color: var(--cyan);
   text-align: center;
   margin-bottom: 0;
+  font-family: Dancing, monospace;
 }
 
 .description {
   text-align: center;
   color: var(--cyan);
   font-size: 20px;
-  margin-top: 2%;
+  margin: 2% 20% 10% 20%;
 }
 
 hr {
@@ -161,7 +163,7 @@ hr {
   display: flex;
   position: relative;
   margin-top: 10%;
-  border: 5px solid var(--overlay);
+  border: 2px solid var(--overlay);
 }
 
 .skills-section {
