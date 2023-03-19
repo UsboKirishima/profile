@@ -1,319 +1,524 @@
-<!DOCTYPE html>
-<html lang="en">
+<audio id="myAudio">
+    <source src="https://ia902502.us.archive.org/24/items/xxxtentacion-revenge-audio/xxxtentacion-revenge-audio.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
 
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--stylesheet-->
-    <link rel="stylesheet" href="style.css">
-
-    <!--bootstrapcdn-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!--fontawesomecdn-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dosis:wght@200&family=Handlee&display=swap"
-        rel="stylesheet">
-    
-    <link rel="shortcut icon" href="https://i.ibb.co/LSwR0GF/IMG-20221022-235600-379.jpg" type="image/x-icon">
-
-    <!--Meta Data-->
-    <title></title>
-    <meta id="title-meta" name="title" content="davideusberti">
-    <meta id="description-meta" name="description"
-        content="flexatore & dripper from Italy.">
-
-    <meta name="keywords"
-        content="davideusberti usbo UsboKirishima usberti">
-    
-    <meta property="og:image" content="https://i.ibb.co/LSwR0GF/IMG-20221022-235600-379.jpg" />
-    <meta property="og:image:type" content="image/jpg" />
-    <meta property="og:image:width" content="250" />
-    <meta property="og:image:height" content="250" />
-
-    <meta name="robots" content="index, follow">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="language" content="English">
-
-    <!-- Favicons -->
-    <link href="assets/img/boy.png" rel="icon">
-    <link href="assets/img/boy.png" rel="apple-touch-icon">
-
-</head>
-
-<body>
-
-    <!-- Profile picture-->
-    <img src="https://i.ibb.co/LSwR0GF/IMG-20221022-235600-379.jpg" alt="profile picture" class="profile-picture">
-
-    <!-- Profile name-->
-    <div class="profile-name"><b id="name_component"></b></div>
-
-    <!-- Profile about-->
-    <div class="profile-about"><b id="description_component">Your Description</b></div>
-
-    <!-- Links-->
-    <div id="link-container">
-        <!-- This will be populated with links -->
+<section class="device">
+    <div class="device__top">
+        <img class="album-art"
+            src="https://naijamusic.ng/wp-content/uploads/2022/06/d-7.png"
+            alt="album art" />
+        <img class="album-art" src="https://res.cloudinary.com/andrewcanham/image/upload/v1579132801/jamie-xx.jpg"
+            alt="album art" />
+        <img class="album-art" src="https://res.cloudinary.com/andrewcanham/image/upload/v1579132801/gidge.jpg"
+            alt="album art" />
     </div>
+    <div class="device__mid">
+        <div class="info">
+            <hgroup class="info__left">
+                <h1 class="info__song">
+                    <span class="song">Revenge</span>
+                    <span class="song">Gosh</span>
+                    <span class="song">Norrland</span>
+                </h1>
+                <h2 class="info__artist">
+                    <span class="artist">by XXXTENTACION</span>
+                    <span class="artist">by Jamie xx</span>
+                    <span class="artist">by Gidge</span>
+                </h2>
+            </hgroup>
 
+            <hgroup class="info__right">
+                <h1 class="info__type">Playlist <span id="current-song">1</span> of 3</h1>
+                <h2 class="info__type-name">My faves</h2>
+            </hgroup>
+        </div>
 
-    <footer>
+    </div>
+    <div class="device__bottom">
+        <div class="progress">
+            <input id="slider" type="range" value="0" min="0" max="119" step="1" />
+        </div>
+        <div class="equaliser"></div>
+        <div class="controls">
+            <button class="controls__round-button" id="previous-button" disabled>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.13672 5L9.5 0.5V9.5L3.13672 5ZM0.5 0.5H2.01172V9.5H0.5V0.5Z" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="controls__round-button controls__round-button--large" id="play-button">
+                <div class="play">
+                    <svg class="controls__play" width="14" height="18" viewBox="0 0 14 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.0195312 0.269531L13.7305 9L0.0195312 17.7305V0.269531Z" />
+                    </svg>
+                    <span class="sr-only">Play</span>
+                </div>
+                <div class="pause">
+                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.5195 0.269531H15.5V17.7305H10.5195V0.269531ZM0.5 17.7305V0.269531H5.48047V17.7305H0.5Z"
+                            fill="#728C98" />
+                    </svg>
+                    <span class="sr-only">Pause</span>
+                </div>
+            </button>
+            <button class="controls__round-button" id="next-button" disabled>
+                <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 10 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.98828 0.5H9.5V9.5H7.98828V0.5ZM0.5 9.5V0.5L6.86328 5L0.5 9.5Z" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap");
 
-        <!--bottom text-->
-        <a href="https://instagram.com/davideusberti" class="link-hide">
-            <div class="bottom-text">davideusberti XP</div>
-        </a>
-    </footer>
+    html {
+        font-size: 12px;
+    }
 
-    <!--Javascript-->
-    <script>
-    let config = {
-    "Title": "Davide Usberti",
-    "Name": "davideusberti",
-    "Description": "",
-    "links": [
-        {
-            "Title": "Instagram",
-            "URL": "https://instagram.com/davideusberti",
-            "icon_classes": "fab fa-instagram"
-        },
-        {
-            "Title": "TikTok",
-            "URL": "https://www.tiktok.com/@davideusberti",
-            "icon_classes": "fa fa-coffee"
-        },
-        {
-            "Title": "Twitter",
-            "URL": "https://twitter.com/davideusberti",
-            "icon_classes": "fab fa-twitter"
-        },
-        {
-            "Title": "Github",
-            "URL": "https://github.com/UsboKirishima",
-            "icon_classes": "fab fa-github",
-        },
-        {
-            "Title": "Discord",
-            "URL": "https://discord.com/users/848463685374443530",
-            "icon_classes": "fab fa-discord",
-        },
-        {
-            "Title": "Spotify",
-            "URL": "https://open.spotify.com/user/r6zgsygw4x6fvx1qj24jvy9ef?si=a16a6624632d4b60",
-            "icon_classes": "fab fa-spotify",
-        },
-        {
-            "Title": "Youtube",
-            "URL": "https://www.youtube.com/channel/UCoo119wKgywNac9ScwngpuQ",
-            "icon_classes": "fab fa-youtube"
-        },
-        {
-            "Title": "Facebook",
-            "URL": "https://www.facebook.com/davide.usberti.12",
-            "icon_classes": "fab fa-facebook"
-        },
-        {
-            "Title": "Website",
-            "URL": "http://davideusberti.me",
-            "icon_classes": "fas fa-link",
-        }
-    ]
-}
-
-const linkComponent = (title, icon_classes, url) => {
-    return `
-      <div>
-          <a href="${url}" target="_blank" class="links , hover">
-          <i class="${icon_classes} links-in"></i>
-          ${title}</a>
-      </div>
-    `
-}
-
-link_container = document.getElementById("link-container")
-
-name_component = document.getElementById("name_component")
-description_component = document.getElementById("description_component")
-
-description_meta = document.getElementById("description-meta")
-title_meta = document.getElementById("title-meta")
-
-
-name_component.innerText = config.Name
-description_component.innerText = config.Description
-document.title = config.Title
-description_meta = config.Description
-title_meta = config.Title
-
-
-for (let i = 0; i < config.links.length; i++) {
-    link_container.innerHTML += linkComponent(config.links[i].Title, config.links[i].icon_classes, config.links[i].URL)
-}
-    </script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-
-</body>
-    <style>
     body {
-    background: url("https://i.pinimg.com/736x/f0/d8/00/f0d800358927c796a9987cceb0e07e95.jpg");
-    background-size:100% 100%;
-  }
-  
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
+        background: #000;
+        color: #e0def4;
+        font-family: "Roboto", sans serif;
+        font-weight: 300;
     }
-  
-    50% {
-      background-position: 100% 50%;
+
+    .sr-only:not(:focus):not(:active) {
+        clip: rect(0 0 0 0);
+        -webkit-clip-path: inset(100%);
+        clip-path: inset(100%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
     }
-  
-    100% {
-      background-position: 0% 50%;
+
+    .device {
+        background: #000;
+        border-radius: 2.4rem;
+        display: flex;
+        flex-direction: column;
+        height: 50rem;
+        left: 50%;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        transform: translate3D(-50%, -50%, 0);
+        width: 26.8rem;
+        border: 0.5px solid #191724;
     }
-  }
-  
-  img {
-    border-radius: 50%;
-  }
-  
-  .profile-picture {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    height: auto;
-    max-width: 100px;
-  }
-  
-  .profile-name {
-    text-align: center;
-    padding: 10px;
-    font-family: "Dosis", sans-serif;
-    color: white;
-    font-size: 22px;
-    letter-spacing: 2px;
-  }
-  
-  .profile-about {
-    text-align: center;
-    padding: 2px;
-    font-family: "Dosis", sans-serif;
-    color: white;
-    font-size: 15px;
-    letter-spacing: 2px;
-  }
-  
-  .links {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    border: 0.5px solid rgb(255, 255, 255);
-    border-width: 1px;
-    width: 490px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 40px;
-    font-family: "Dosis", sans-serif;
-    position: relative;
-    font-size: 20px;
-    letter-spacing: 3px;
-  }
-  
-  .links-in {
-    padding: 5px;
-    border: 0.5px solid rgba(255, 255, 255, 0);
-    border-width: 1px;
-    width: 30px;
-    display: block;
-    border-radius: 40px;
-    left: 20px;
-    position: absolute;
-    font-size: 20px;
-  }
-  
-  .hover {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    transition: color 1s;
-  }
-  
-  .hover:hover {
-    color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);
-    text-decoration: none;
-  }
-  
-  .bottom-text {
-    text-decoration: none;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    font-family: "Handlee", cursive;
-  }
-  
-  .link-hide {
-    text-decoration: none;
-  }
-  .link-hide:hover {
-    text-decoration: none;
-  }
-  
-  @media (max-width: 548px) {
-    .links {
-      text-align: center;
-      margin-top: 20px;
-      padding: 20px;
-      border: 0.5px solid rgb(255, 255, 255);
-      border-width: 1px;
-      width: 290px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 40px;
-      font-family: "Dosis", sans-serif;
-      position: relative;
+
+    .device__top {
+        background: rgba(255, 255, 255, 0.6);
+        height: 27.2rem;
+        overflow: hidden;
+        position: relative;
     }
-    .profile-about {
-      text-align: center;
-      padding: 2px;
-      font-family: "Dosis", sans-serif;
-      color: white;
-      font-size: 15px;
-      letter-spacing: 1px;
+
+    .album-art {
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        width: 100%;
+        position: absolute;
+        transform: translateY(100%);
     }
-  }
-  
-  .links-footer {
-    padding: 4px;
-    border: 0.5px solid rgb(255, 255, 255);
-    border-width: 1px;
-    width: 40px;
-    display: inline-block;
-    border-radius: 30px;
-    font-size: 20px;
-    text-align: center;
-    margin: 10px;
-    margin-top: 50px;
-  }
-    </style>
-</html>
+
+    .album-art.active {
+        transform: translateY(0);
+    }
+
+    .device__mid {
+        flex: 1;
+    }
+
+    .info {
+        display: flex;
+        font-size: 0.9rem;
+        padding: 2rem 3rem;
+    }
+
+    .info__right {
+        flex: 1;
+        text-align: right;
+    }
+
+    .info__song {
+        font-weight: 700;
+        height: 1.6rem;
+        margin: 0;
+        overflow: hidden;
+        padding: 0 0 0.4rem;
+        position: relative;
+    }
+
+    .song {
+        display: block;
+        position: absolute;
+        transform: translateY(150%);
+    }
+
+    .song.active {
+        transform: translateY(0);
+    }
+
+    .info__artist {
+        font-size: 1rem;
+        font-weight: 300;
+        height: 1.2rem;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: 12rem;
+    }
+
+    .artist {
+        display: block;
+        left: 0;
+        top: 0;
+        position: absolute;
+        transform: translateY(150%);
+    }
+
+    .artist.active {
+        transform: translateY(0);
+    }
+
+    .info__type {
+        color: #AEBEC6;
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin: 0.4rem 0 0.3rem;
+        padding: 0 0 0.3rem;
+        text-transform: uppercase;
+    }
+
+    .info__type-name {
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+    }
+
+    .controls {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .progress {
+        height: 0.5rem;
+        margin: 3rem 0 3.6rem;
+        position: relative;
+    }
+
+    #play-button .pause {
+        display: none;
+    }
+
+    #play-button .play {
+        display: block;
+    }
+
+    #play-button.pause .pause {
+        display: block;
+    }
+
+    #play-button.pause .play {
+        display: none;
+    }
+
+    .controls__round-button {
+        background: #000;
+        border-radius: 10rem;
+        height: 5rem;
+        margin: 0 1rem 3rem;
+        position: relative;
+        transition: box-shadow 0.05s ease-in;
+        width: 5rem;
+        color: #191724;
+    }
+
+    .controls__round-button svg {
+        height: 1.6rem;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: 1.6rem;
+        color: #191724;
+        
+    }
+
+    .controls__round-button svg path {
+        fill: #191724;
+        transition: fill 0.05s ease-in;
+        color: #191724;
+    }
+
+    .controls__round-button:active {
+        }
+
+    .controls__round-button:active * {
+        fill: #191724;
+        filter: drop-shadow(0 0 0.1rem rgba(124, 214, 255, 0.5));
+    }
+
+    .controls__round-button--large {
+        height: 7.5rem;
+        text-align: center;
+        width: 7.5rem;
+    }
+
+    .controls__round-button--large svg {
+        height: 2.6rem;
+        width: 2.6rem;
+    }
+
+    .controls__play {
+        margin-left: 0.4rem;
+    }
+
+    button {
+        border: none;
+        color: #191724;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "roboto", sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    button:hover,
+    button:focus {
+        background: #26233a;
+    }
+
+    button:focus {
+        outline: none;
+    }
+    
+    button:disabled {
+        cursor: default;
+        opacity: 70%;
+    }
+
+    input[type=range] {
+        background: transparent;
+        height: 2.5rem;
+        -webkit-appearance: none;
+        margin: 0.1rem 3rem;
+        width: calc(100% - 6rem);
+    }
+
+    input[type=range]:focus {
+        outline: none;
+    }
+
+    input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 0.5rem;
+        cursor: pointer;
+        animate: 0.2s;
+        border: 0;
+        background: rgba(78, 134, 165, 0.03);
+        border-radius: 1rem;
+        bottom: 0;
+    }
+
+    input[type=range]::-webkit-slider-thumb {
+        border: 0;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -6px;
+        background: #26233a;
+        border-radius: 1rem;
+        height: 1.4rem;
+        padding: 0;
+        width: 1.4rem;
+    }
+
+    input[type=range]::-webkit-slider-thumb:hover {
+        background: #fff;
+    }
+
+    input[type=range]:focus::-webkit-slider-runnable-track {
+        background: rgba(73, 198, 255, 0.5);
+    }
+
+    input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 0.5rem;
+        cursor: pointer;
+        animate: 0.2s;
+        border: 0;
+        background: #191724;
+        border-radius: 1rem;
+        bottom: 0;
+    }
+
+    input[type=range]::-moz-range-thumb {
+        border: 0;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -6px;
+        background: #e0def4;
+        border-radius: 1rem;
+        height: 1.4rem;
+        padding: 0;
+        width: 1.4rem;
+    }
+
+    input[type=range]::-ms-track {
+        width: 100%;
+        height: 0.5rem;
+        cursor: pointer;
+        animate: 0.2s;
+        border: 0;
+        background: #191724;
+        border-radius: 1rem;
+        bottom: 0;
+    }
+
+    input[type=range]::-ms-thumb {
+        border: 0;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -6px;
+        background: #191724;
+        border-radius: 1rem;
+        height: 1.4rem;
+        padding: 0;
+        width: 1.4rem;
+    }
+</style>
+
+<script>
+
+    // set variables
+    let currentSong = 0, maxSong, playing = false, position = 0, maxPosition = 1800, pause = false;
+
+    // grab relevant element references
+    const elements = {
+        images: document.getElementsByClassName("album-art"),
+        songs: document.getElementsByClassName("song"),
+        artists: document.getElementsByClassName("artist"),
+        play: document.getElementById("play-button"),
+        previous: document.getElementById("previous-button"),
+        next: document.getElementById("next-button"),
+        currentSong: document.getElementById("current-song"),
+        slider: document.getElementById("slider"),
+        audio: document.getElementById("myAudio")
+    }
+
+    // controlling the DOM
+    function next() {
+        updateDOM('remove');
+        currentSong++;
+        if (currentSong > maxSong) {
+            currentSong = 0;
+        }
+        updateDOM('add');
+        elements.slider.value = 0;
+        position = 0;
+    }
+
+
+    function previous() {
+        updateDOM('remove');
+        currentSong--;
+        if (currentSong < 0) {
+            currentSong = maxSong;
+        }
+        updateDOM('add');
+        elements.slider.value = 0;
+    }
+
+    function updateDOM(action) {
+        elements.currentSong.innerHTML = currentSong + 1;
+        if (action === 'add') {
+            elements.images[currentSong].classList.add("active");
+            elements.songs[currentSong].classList.add("active");
+            elements.artists[currentSong].classList.add("active");
+        } else {
+            elements.images[currentSong].classList.remove("active");
+            elements.songs[currentSong].classList.remove("active");
+            elements.artists[currentSong].classList.remove("active");
+        }
+    }
+
+    function playBar() {
+        if (!pause) {
+            if(elements.slider.value == 119) {
+                elements.slider.value = 0;
+            }
+            setTimeout(function () {
+                elements.slider.value = position++;
+                if (position > maxPosition) {
+                    position = 0;
+                    next();
+                }
+                playBar();
+            }, 1220);
+        }
+    }
+
+    function play() {
+        if (!playing) {
+            pause = false;
+            playBar();
+            elements.play.classList.add("pause");
+            elements.audio.play();
+        } else {
+            pause = true;
+            elements.play.classList.remove("pause");
+            elements.audio.pause();
+        }
+        playing = !playing;
+    }
+
+    function sliderChange() {
+        position = elements.slider.value;
+        elements.audio.currentTime = elements.slider.value;
+    }
+
+    // initial setup
+    function init() {
+        // setup first image
+        elements.images[currentSong].classList.toggle("active");
+        elements.songs[currentSong].classList.toggle("active");
+        elements.artists[currentSong].classList.toggle("active");
+        maxSong = elements.images.length - 1;
+        // event listeners for controls
+        elements.next.addEventListener("click", function () {
+            next();
+        });
+        elements.previous.addEventListener("click", function () {
+            previous();
+        });
+        elements.play.addEventListener("click", function () {
+            play();
+        });
+        elements.slider.oninput = sliderChange;
+    }
+
+
+
+    init();
+
+
+
+</script>
